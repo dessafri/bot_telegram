@@ -1,0 +1,44 @@
+{
+  "name": "bot_telegram",
+  "version": "1.0.0",
+  "description": "bot for telegram",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --ext ts --exec ts-node src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "echo \"No test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dessafri/bot_telegram.git"
+  },
+  "keywords": [
+    "bot_telegram"
+  ],
+  "author": "dessfri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dessafri/bot_telegram/issues"
+  },
+  "homepage": "https://github.com/dessafri/bot_telegram#readme",
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/dotenv": "^8.2.3",
+    "@types/express": "^5.0.1",
+    "@types/helmet": "^4.0.0",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^22.13.14",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "helmet": "^8.1.0",
+    "morgan": "^1.10.0",
+    "telegraf": "^4.16.3"
+  }
+}

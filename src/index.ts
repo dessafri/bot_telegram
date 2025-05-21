@@ -1,3 +1,4 @@
+// src/index.ts
 import dotenv from "dotenv";
 dotenv.config(); // Load environment variables
 
@@ -6,13 +7,12 @@ import cors from "cors";
 import helmet from "helmet";
 import morgan from "morgan";
 import { router } from "./routes";
-import { Telegraf } from "telegraf";
-import { BotService } from "./services/bot.service";
+import { BotService } from "./services/bot.service"; // ✅ fix this import
 
 const app = express();
 const botService = new BotService(process.env.TELEGRAM_BOT_TOKEN as string);
 
-botService.startBot();
+botService.startBot(); // ✅ start the bot
 
 app.use(cors());
 app.use(helmet());
